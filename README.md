@@ -10,11 +10,9 @@ I wanted a single, searchable home for everything I learn while working toward N
 
 ## Screenshots
 
-*(Add 2-3 images here: graph view, an Ollama query against the vault, and a MOC/hub note)*
-
-`![Graph view](./screenshots/graph-view.png)`
-`![Ollama query example](./screenshots/ollama-query.png)`
-`![Map of Content](./screenshots/moc-example.png)`
+![Graph view](./images/graph-view.png)
+![Ollama query example](./images/ollama-query.png)
+![Map of Content](./images/moc-example.png)
 
 ## Stack
 
