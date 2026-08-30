@@ -1,21 +1,58 @@
-# E'Van Powers — Portfolio Site
+# AI-Powered Security Knowledge Base
 
-A single-page portfolio built with plain HTML/CSS (no build tools, no dependencies except two Google Fonts).
+A local-first Obsidian vault for organizing security certification study, hands-on lab work, and technical reference material — with an integrated offline AI assistant powered by Ollama.
 
-**Repo:** https://github.com/EvPowe07825/e-van-powers-portfolio
-**Live site:** https://EvPowe07825.github.io/e-van-powers-portfolio/
+This repo contains a sanitized subset of my personal vault: the structure, templates, and example notes, minus anything tied to active certification exams or private project details.
 
-## Files
-- `index.html` — the site
-- `favicon.svg` — browser tab icon
-- `EVan_Powers_Master_Resume.docx` — primary resume download
-- `EVan_Powers_Master_Resume.pdf` — secondary resume download (same content, PDF format)
-- `images/` — screenshots and social-preview banner (must keep this folder name and path — the site references `images/vault-chat.png`, `images/vault-graph.png`, `images/vault-dashboard.png`, `images/og-banner.png`)
+## Why I Built This
 
-## Making updates
-Everything is in `index.html` — text, structure, and styles are all in that one file. To change anything:
-1. Edit the file (or ask Claude to make the edit).
-2. Re-upload it to this repo's root, overwriting the old version.
-3. GitHub Pages redeploys automatically within a minute or two — no settings changes needed.
+I wanted a single, searchable home for everything I learn while working toward Network+, Security+, and hands-on platforms like TryHackMe — one that doesn't depend on an internet connection or a subscription to stay useful. The result is a knowledge base that grows with each cert and lab, cross-links related concepts automatically, and lets me query my own notes using a local LLM instead of digging through folders.
 
-Keep `index.html`, `favicon.svg`, and the resume `.docx` all in the same top-level folder (no subfolders) so the relative links between them keep working.
+## Screenshots
+
+*(Add 2-3 images here: graph view, an Ollama query against the vault, and a MOC/hub note)*
+
+`![Graph view](./screenshots/graph-view.png)`
+`![Ollama query example](./screenshots/ollama-query.png)`
+`![Map of Content](./screenshots/moc-example.png)`
+
+## Stack
+
+- **[Obsidian](https://obsidian.md/)** — note-taking and linking engine
+- **[Ollama](https://ollama.com/)** — local LLM runtime, fully offline
+  - `llama3.1:latest` — general-purpose reasoning and Q&A over notes
+  - `mistral:latest` — alternate model for comparison/fallback
+  - `qwen2.5:0.5b` — lightweight model for fast, low-resource queries
+  - `nomic-embed-text:latest` — embeddings for semantic search across the vault
+- **Dataview** *(if applicable)* — auto-generated tables/queries across notes
+- **Markdown** — all notes, templates, and reference material
+
+## What This Demonstrates
+
+- **Security domain knowledge** — structured documentation across Network+, Security+, and TryHackMe rooms, including methodology, tools, and takeaways per lab
+- **Local AI integration** — wiring a local LLM (via Ollama) into a real, daily-use workflow, including embeddings-based semantic search
+- **Systems thinking** — organizing sprawling technical material into a navigable, cross-linked structure rather than flat notes
+- **Self-directed tooling** — building and maintaining infrastructure (templates, automation, model selection) to support ongoing learning
+
+## Structure
+
+```
+vault/
+├── security-plus/       # Security+ study notes
+├── network-plus/        # Network+ study notes (completed)
+├── tryhackme/            # Room-by-room notes: methodology, tools, takeaways
+├── tools-reference/      # Fast reference by tool: syntax, common flags, use cases
+├── projects/             # Personal project brainstorming and completed builds
+└── templates/            # Note templates used across the vault
+```
+
+## Status
+
+Core setup (Obsidian + Ollama integration) is working. Actively importing and organizing existing Network+ and Security+ notes into the structure above.
+
+## About Me
+
+I'm E'Van Powers, an IT Support Technician working toward a career in cybersecurity/network security. I hold CompTIA Network+ and PC Pro certifications, and I'm currently pursuing AWS Cloud Practitioner, CompTIA Security+, and a Cloud Computing Certificate at Lee College.
+
+- LinkedIn: [linkedin.com/in/e-van-powers-57a616b2](https://www.linkedin.com/in/e-van-powers-57a616b2)
+- Portfolio: [evpowe07825.github.io/e-van-powers-portfolio](https://evpowe07825.github.io/e-van-powers-portfolio/)
