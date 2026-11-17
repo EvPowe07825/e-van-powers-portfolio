@@ -2,11 +2,11 @@
 
 A local-first Obsidian vault for organizing security certification study, hands-on lab work, and technical reference material — with an integrated offline AI assistant powered by Ollama.
 
-This repo contains a sanitized subset of my personal vault: the structure, templates, and example notes, minus anything tied to active certification exams or private project details.
+This repository contains my portfolio site and project screenshots. The vault layout below illustrates how I organize my Obsidian knowledge base.
 
 ## Why I Built This
 
-I wanted a single, searchable home for everything I learn while working toward Network+, Security+, and hands-on platforms like TryHackMe — one that doesn't depend on an internet connection or a subscription to stay useful. The result is a knowledge base that grows with each cert and lab, cross-links related concepts automatically, and lets me query my own notes using a local LLM instead of digging through folders.
+I built this searchable knowledge base while preparing for CompTIA Network+. I earned Network+ in January 2026 and continue using the vault for Security+ study and hands-on TryHackMe labs.
 
 ## Screenshots
 
@@ -22,7 +22,7 @@ I wanted a single, searchable home for everything I learn while working toward N
   - `mistral:latest` — alternate model for comparison/fallback
   - `qwen2.5:0.5b` — lightweight model for fast, low-resource queries
   - `nomic-embed-text:latest` — embeddings for semantic search across the vault
-- **Dataview** *(if applicable)* — auto-generated tables/queries across notes
+- **Dataview** — queries used in the dashboard screenshot above.
 - **Markdown** — all notes, templates, and reference material
 
 ## What This Demonstrates
@@ -32,7 +32,9 @@ I wanted a single, searchable home for everything I learn while working toward N
 - **Systems thinking** — organizing sprawling technical material into a navigable, cross-linked structure rather than flat notes
 - **Self-directed tooling** — building and maintaining infrastructure (templates, automation, model selection) to support ongoing learning
 
-## Structure
+## Illustrative Obsidian vault layout
+
+This example shows how the vault is organized. The public repository contains screenshots of the project.
 
 ```
 vault/
@@ -50,7 +52,7 @@ Core setup (Obsidian + Ollama integration) is working. Actively importing and or
 
 ## About Me
 
-I'm E'Van Powers, an IT Support Technician working toward a career in cybersecurity/network security. I hold CompTIA Network+ and PC Pro certifications, and I'm currently pursuing AWS Cloud Practitioner, CompTIA Security+, and a Cloud Computing Certificate at Lee College.
+I'm E'Van Powers, an Associate IS Technician providing remote enterprise healthcare support at Providence. I hold CompTIA Network+ and TestOut PC Pro. I'm studying for CompTIA Security+, AWS Certified Cloud Practitioner, and CompTIA Linux+, and expect to complete Lee College's Cloud Computing Certificate of Completion in May 2027.
 
 - LinkedIn: [linkedin.com/in/e-van-powers-57a616b2](https://www.linkedin.com/in/e-van-powers-57a616b2)
 - Portfolio: [evpowe07825.github.io/e-van-powers-portfolio](https://evpowe07825.github.io/e-van-powers-portfolio/)
